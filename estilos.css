@@ -1,0 +1,143 @@
+
+/*Entrega Michelle Katz (220144) Y Maite Rios (362540)*/
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+section {
+    background-color: #005A9C;
+    border-radius: 16px;
+    padding: 1%;
+    margin: 0.1% 5%;
+}
+#administrador{
+    margin-bottom: 0;
+}
+article{
+    background-color: #0074C8;
+    border-radius: 16px;
+    border: 1px solid white;
+    padding:  0% 1% 1% 1% ;
+    margin: 0.2%;
+
+}
+
+footer p{
+    background-color: #7F7F7F;
+    margin: 0%;
+    text-align: center;
+}
+
+header h1 {
+    float: left;
+    width: 50%;
+    color: #7F7F7F ;
+    animation: titilar 1s infinite alternate; 
+    margin: 0% 10% 3% 0%;
+}
+
+@keyframes titilar {
+  from {
+    color: #333333; 
+  }
+  to {
+    color: #cccccc; 
+  }
+}
+
+header nav {
+    float: right; 
+    width: auto;
+    background-color: #0074C8;
+    padding: 1%;
+    margin: 0% 0% 1% 1%;
+     border-radius: 0px 0px 0px 8px;
+     position: fixed;
+     right: 0;
+}
+
+table{
+   outline: 1px solid Black;
+   background-color: #7f7f7f;
+   width: 100%;
+}
+
+
+
+table tr th {
+    outline: 1px solid Black;
+
+}
+
+textarea {
+    width: 90%;
+    margin: 0% 5% 0% 5%;
+    height: 60px;
+
+}
+
+#botonEnviar {
+    width: 14%;
+}
+
+
+#administrador , #juegos , #datos  {
+    clear: both;
+}
+
+
+
+#idModoAdministrador {
+    margin: 1% 0%;
+}
+
+
+ #juegoemojis{
+    background-color: white;
+    border-radius: 16px ;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+ }
+
+
+ #juegoemojis table{
+    background-color: white;     
+    text-align: center;
+   outline: 1px solid white;
+    
+ }
+
+
+ #juegoemojis table td button{
+    width: 100px;
+    height: 40px;
+    border:1px solid lightgray;
+    padding: 0;
+    font-size: 32px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+  justify-content: center;
+     
+
+    
+ }
+  #juegoemojis table td button:hover{ 
+    background-color: lightgray;
+     border:1px solid lightgray;
+     border-radius: 8px;
+  }
+
+ #juegoemojis div{
+    width: auto;
+}

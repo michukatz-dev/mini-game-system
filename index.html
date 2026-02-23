@@ -1,0 +1,167 @@
+<!-- Entrega Michelle Katz (220144) Y Maite Rios (362540) -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Michelle Y Maite</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./javascript/clases.js"></script>
+    <script src="./javascript/funciones.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1> ¡Mini Juegos para todos!</h1>
+        <nav>
+            <button id="BotonDatos" type="button">Datos</button>
+            <button id="Botonjuegos" type="button">Juegos</button>
+            <button id="BotonAdministrador" type="button">Administrador</button>
+        </nav>
+    </header>
+
+    <!-- SECCION DATOS-->
+    <section id="datos">
+        <h2> Datos</h2>
+        <article>
+            <h2> Alta de jugadores</h2>
+            <form action="#" id="formulario">
+                <label for="idNombre">Nombre:</label>
+                <input id="idNombre" name="nombre" type="text" required>
+                <label for="idEdad">Edad:</label>
+                <input id="idEdad" value="5" type="number" required min="5" max="100" name="edad">
+                <button id="idBotonAgregar" type="button">Agregar</button>
+            </form>
+        </article>
+
+
+        <article>
+            <h2>Información</h2>
+            <input type="radio" id="comentario1" value="comentario1" name="comentario" checked>
+            <label for="comentario1">Comentarios ordenados por nombre creciente</label>
+            <input type="radio" id="comentario2" value="comentairo2" name="comentario">
+            <label for="comentario2">Comentarios ordenados por edad creciente</label>
+            <br>
+            <label for="destacar">Destacar: (ingrese palabra a destacar en comentarios)</label>
+            <input id="destacar" type="text">
+
+            <div>
+                <br>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre Jugador</th>
+                        <th>Edad</th>
+                        <th>Comentario</th>
+
+                    </tr>
+                </thead>
+                <tbody id="TablaDatosAgregar"></tbody>
+            </table>
+
+            <p>Jugador/es con mayor cantidad de comentarios(ordenados por nombre):</p>
+            <ul id="masComentarios">
+                <li>Sin datos</li>
+            </ul>
+            <p>Jugador/es con misma edad</p>
+            <ul id="mismaEdad">
+                <li>Sin datos</li>
+            </ul>
+            <p>Jugador/es que nunca jugaron: (ordenados por nombre)</p>
+            <ul id="nuncaJugo">
+                <li>Sin datos</li>
+            </ul>
+        </article>
+        <button id="btnMayor10" type="button">Jugadores > 10 años </button>
+        <button id="btnPromedio" type="button">Promedio de edad</button>
+
+    </section>
+
+    <!-- SECCION JUEGOS-->
+
+    <section id="juegos">
+        <h2>¡Juegos!</h2>
+        <article>
+            <h2>Configurar</h2>
+            <label for="jugador">Jugador:</label>
+            <select id="jugador" name="jugador">
+
+                <!-- <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option> -->
+            </select>
+            <label for="conSonido">Con Sonido</label>
+            <input type="checkbox" id="conSonido">
+        </article>
+
+
+        <article>
+            <h2>¿Cuál es el diferente?</h2>
+            <h3>Presiona el diferente</h3>
+
+            <div id="juegoemojis">
+                <div>
+                    <table id="tablaJuegoEmojis"></table>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h2>Calcula la suma</h2>
+            <h3>Suma los dos números</h3>
+            <p id="suma"></p>
+            <input type="number" id="botonEnviar">
+            <button type="button" id="enviar">Enviar</button>
+        </article>
+
+        <article>
+            <h2>Ingresa tu comentario</h2>
+            <textarea name="comentario" id="idComentario"></textarea>
+            <button type="button" id="botonEnviarComentario">Enviar Comentario</button>
+        </article>
+    </section>
+
+    <!-- SECCION MODO ADMINISTRADOR-->
+
+    <section id="administrador">
+        <h2>Modo Administrador</h2>
+        <article>
+            <h3>Resumen (datos ordenados por nombre de jugador)</h3>
+            <table>
+                <tr>
+                    <th>Nombre Jugador</th>
+                    <th>Edad</th>
+                    <th>Diferente: <br> ✅ </th>
+                    <th>Diferente: <br> ❌</th>
+                    <th>Suma: <br> ✅ </th>
+                    <th>Suma: <br> ❌</th>
+                    <th>Cantidad de <br> comentarios</th>
+
+                </tr>
+                <tbody id="tablaResumen"></tbody>
+            </table>
+            <h3>Edición de Comentarios (datos ordenados por hora)</h3>
+            <table>
+                <tr>
+                    <th>Nombre Jugador</th>
+                    <th>Hora del Comentario</th>
+                    <th>Comentario</th>
+                </tr>
+                <tbody id="tablaEdicionComentarios"></tbody>
+            </table>
+            <button type="button" id="idModoAdministrador">Actualizar Todos los Comentarios</button>
+        </article>
+    </section>
+     <button type="button" id="idBotoncuantosjugadores">Actualizar Todos los Comentarios</button>
+        
+    <!-- FOOTER-->
+    <footer>
+        <p>Desarrollado por Michelle Katz(estudiante 220144) y Maite Rios (estudiante 362540) </p>
+    </footer>
+
+</body>
+
+</html>
